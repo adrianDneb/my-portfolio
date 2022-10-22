@@ -1,0 +1,400 @@
+/*925px SCREEN RESOLUTION*/
+
+@media (max-width: 925px) {
+
+    /* NAVIGATION*/
+
+    nav {
+        width: 100vw;
+        height: 7vh;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap: 33.5vw;
+        z-index: 5;
+        padding: 0 5% 0 5%;
+    }
+
+    .nav_links {
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        /* gap: 3%; */
+        padding: 0;
+    }
+
+    nav div.nav_logo {
+        padding: 0;
+    }
+
+    nav div.nav_logo a {
+        color: var(--dgray);
+        font-size: 2vw;
+    }
+
+    /*MAIN*/
+    main {
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-top: 7vh;
+        background-color: var(--dgray);
+    }
+
+    /* HOME SECTION */
+    .home {
+        height: 93vh;
+    }
+
+    .home .home_left {
+        position: static;
+        width: 50%;
+        height: auto;
+    }
+
+    .home_left_wrapper {
+        height: auto;
+        justify-content: flex-start;
+        gap: 3vh;
+    }
+
+    .home_left h2 {
+        font-size: 5vw;
+    }
+
+    .home_left h1 {
+        font-size: 12vw;
+    }
+
+    .home_left .desc,
+    .home_left .desc a {
+        font-size: 1.7vw;
+    }
+
+    .socmed_links a {
+        font-size: 1.7vw;
+    }
+
+    .home .home_right {
+        width: 50%;
+    }
+
+    .home_right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*SKILLS SECTION*/
+
+
+    .skills h1 {
+        font-size: 4vw;
+    }
+
+    .skills_list ul {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+
+    .skills_list ul li span {
+        font-size: 1.7vw;
+    }
+
+    /*PORTFOLIO SECTION*/
+
+    .fmentor_head {
+        font-size: 4vw;
+    }
+
+    .fmentor ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        place-content: center;
+        gap: 25px 25px;
+    }
+
+    .fmentor ul li.grid_item {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .fmentor p {
+        color: var(--white);
+        text-align: left;
+        font-size: 2.5vh;
+        font-weight: 400;
+        outline: 2px solid var(--white);
+        padding: 2vh;
+        border-radius: 10px;
+        text-shadow: none;
+    }
+
+    /*RESUME SECTION*/
+
+    .cv_dl p {
+
+        color: var(--white);
+        font-size: 2.5vw;
+    }
+
+    .cv_dl a {
+        width: 20vw;
+        font-size: 2.5vw;
+    }
+
+    .cv_dl a img {
+        width: 2.5vw;
+    }
+
+    .resume_wrap {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .resume_left,
+    .resume_right {
+        gap: 3vh;
+        width: 100%;
+    }
+
+    .resume_head {
+        font-size: 4vw;
+    }
+
+    .resume_left h3.resume_pos {
+        font-size: 2vw;
+    }
+
+    .resume_left h3.resume_date {
+        font-size: 2vw;
+    }
+
+    .resume_left ul {
+        gap: 1.5vh;
+    }
+
+    .resume_left ul li {
+        margin-left: 2vw;
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    .resume_right p {
+        font-size: 2vw;
+    }
+
+    .resume_right_desc {
+        gap: 2vh;
+    }
+
+    /*CONTACT SECTION*/
+    .contact {
+        display: flex;
+        flex-basis: 1;
+        flex-direction: row;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding: 5% 5% 2% 5%;
+    }
+
+    .contact_wrap {
+        display: flex;
+        flex-basis: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2vw;
+        width: 50%;
+    }
+
+    .contact p,
+    .contact a {
+        font-size: 2vw;
+    }
+
+    .contact h2 {
+        font-size: 4vw;
+    }
+
+    .contact h3 {
+        font-size: 2vw;
+    }
+
+    .contact_item h3 {
+        width: 10vw;
+    }
+
+    .contact_item h3.phone {
+        margin-top: 7px;
+    }
+
+    .contact_wrap .socmed_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1vw;
+        width: min-content;
+        height: min-content;
+    }
+
+    .contact_wrap .socmed_list li img {
+        width: 5vw;
+    }
+
+    .contact img.flower {
+        width: 100%;
+    }
+
+    /*FOOTER*/
+    footer {
+        gap: 0.2vw;
+    }
+
+    footer img {
+        width: 1.5vw;
+    }
+
+    footer p {
+        font-size: 1.5vw;
+
+    }
+
+    footer p:first-child {
+        padding-right: 0.4vw;
+    }
+}
+
+/*700px SCREEN RESOLUTION*/
+
+@media (max-width: 700px) {
+    /* NAVIGATION*/
+
+    nav {
+        gap: 15vw;
+        padding: 4% 10%;
+    }
+
+    .nav_links li a {
+        font-size: 2vw;
+    }
+
+    nav div.nav_logo {
+        padding: 0;
+    }
+
+    nav div.nav_logo a {
+        font-size: 2vw;
+    }
+
+    /* HOME SECTION */
+    .home {
+        display: block;
+        height: auto;
+    }
+
+    .home .home_left {
+        position: relative;
+        width: 100%;
+        padding: 5% 10% 5% 10%;
+    }
+
+    .home .home_left_wrapper {
+        gap: 1vh;
+    }
+
+    .home_left h2 {
+        font-size: 5vw;
+    }
+
+    .home_left h1 {
+        font-size: 12vw;
+    }
+
+    .home_left .desc,
+    .home_left .desc a {
+        font-size: 2vw;
+    }
+
+    .home_left .desc {
+        padding-top: 5%;
+        width: 50%;
+    }
+
+    .socmed_links a {
+        font-size: 2vw;
+    }
+
+    .socmed_links {
+        width: 50%;
+        justify-content: flex-start;
+        gap: 10vw;
+    }
+
+    .socmed {
+        padding-top: 5%;
+        width: 100%;
+    }
+
+    .home .home_right {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .home_right img {
+        position: absolute;
+        width: 40%;
+        height: 40vw;
+        object-fit: cover;
+        object-position: top right;
+        border-radius: 50%;
+        right: 10%;
+        bottom: 4vh;
+    }
+
+    /*SKILLS SECTION*/
+
+    .skills {
+        padding: 10% 10% 5% 10%;
+    }
+
+    .skills_list ul {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    /*PORTFOLIO SECTION*/
+
+    .portfolio {
+        padding: 5% 10%;
+    }
+
+    .fmentor_head {
+        font-size: 4vw;
+    }
+
+    .fmentor ul {
+        grid-template-columns: 1fr;
+        height: 200vw;
+        gap: 15px;
+    }
+
+    /*RESUME SECTION*/
+    .resume {
+        padding: 5% 10%;
+    }
+
+    /*CONTACT SECTION*/
+    .contact {
+        padding: 5% 10% 2% 10%;
+    }
+
+    .contact img.flower {
+        top: 10%;
+        width: 90%;
+    }
+
+}
