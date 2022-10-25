@@ -672,7 +672,7 @@ main {
 .flower_wrap {
     width: 50%;
     text-align: center;
-    
+
 }
 
 .contact img.flower {
@@ -709,5 +709,5 @@ footer p {
 }
 
 footer p:first-child {
-padding-right: 0.3vw;
+    padding-right: 0.3vw;
 }
