@@ -22,7 +22,6 @@
         align-items: flex-start;
         width: 100%;
         height: auto;
-        /* gap: 3%; */
         padding: 0;
     }
 
@@ -31,7 +30,6 @@
     }
 
     nav div.nav_logo a {
-        color: var(--dgray);
         font-size: 2vw;
     }
 
@@ -43,9 +41,17 @@
         background-color: var(--dgray);
     }
 
+    .home,
+    .skills,
+    .portfolio,
+    .resume,
+    .contact {
+        scroll-margin-top: 7vh;
+    }
+
     /* HOME SECTION */
     .home {
-        height: 93vh;
+        height: auto;
     }
 
     .home .home_left {
@@ -135,8 +141,6 @@
     /*RESUME SECTION*/
 
     .cv_dl p {
-
-        color: var(--white);
         font-size: 2.5vw;
     }
 
@@ -162,6 +166,12 @@
 
     .resume_head {
         font-size: 4vw;
+    }
+
+    .resume_exp_pos {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
     }
 
     .resume_left h3.resume_pos {
@@ -289,6 +299,15 @@
         font-size: 2vw;
     }
 
+    /*MAIN*/
+    .home,
+    .skills,
+    .portfolio,
+    .resume,
+    .contact {
+        scroll-margin-top: 7vh;
+    }
+
     /* HOME SECTION */
     .home {
         display: block;
@@ -298,6 +317,7 @@
     .home .home_left {
         position: relative;
         width: 100%;
+        height: auto;
         padding: 5% 10% 5% 10%;
     }
 
@@ -362,7 +382,7 @@
     }
 
     .skills_list ul {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
         gap: 15px;
     }
 
@@ -378,7 +398,7 @@
 
     .fmentor ul {
         grid-template-columns: 1fr;
-        height: 200vw;
+        height: 150vw;
         gap: 15px;
     }
 
@@ -395,6 +415,228 @@
     .contact img.flower {
         top: 10%;
         width: 90%;
+    }
+
+    /*FOOTER*/
+    footer {
+        padding: 0 10% 2% 10%;
+    }
+}
+
+
+/*500px SCREEN RESOLUTION*/
+
+@media (max-width: 500px) {
+    /* NAVIGATION*/
+
+    nav {
+        align-items: center;
+        gap: 3vw;
+    }
+
+    .nav_links li a {
+        font-size: 2.5vw;
+    }
+
+    nav div.nav_logo a {
+        font-size: 2.5vw;
+    }
+
+    /* HOME SECTION */
+
+    .home .home_left {
+        position: relative;
+        width: 100%;
+        padding: 5% 10% 5% 10%;
+    }
+
+    .home .home_left_wrapper {
+        gap: 1vh;
+    }
+
+    .home_left h2 {
+        font-size: 5vw;
+    }
+
+    .home_left h1 {
+        font-size: 12vw;
+    }
+
+    .home_left .desc,
+    .home_left .desc a {
+        font-size: 2.5vw;
+    }
+
+    .home_left .desc {
+        width: 49%;
+    }
+
+    .socmed_links a {
+        font-size: 2.5vw;
+    }
+
+
+    /*SKILLS SECTION*/
+
+    .skills {
+        padding: 10% 10% 5% 10%;
+    }
+
+    .skills_list ul {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 15px;
+    }
+
+    .skills_list ul li span {
+        font-size: 2.5vw;
+    }
+
+    .skills_list ul li.grid_item img {
+        width: 10vw;
+    }
+
+    .skills h1 {
+        font-size: 5vw;
+    }
+
+    .skills_list ul li.head_item img {
+        width: 10vw;
+    }
+
+    /*PORTFOLIO SECTION*/
+
+
+    .fmentor_head {
+        font-size: 5vw;
+    }
+
+    /* RESUME SECTION */
+    .cv_dl p {
+        font-size: 3vw;
+    }
+
+    .cv_dl a {
+        width: 25vw;
+        font-size: 3vw;
+    }
+
+    .cv_dl a img {
+        width: 3vw;
+    }
+
+    .resume_head {
+        font-size: 5vw;
+    }
+
+    .resume_left h3.resume_pos {
+        font-size: 3.5vw;
+        width: 60%;
+    }
+
+    .resume_left h3.resume_date {
+        font-size: 3vw;
+    }
+
+    .resume_left ul li {
+        margin-left: 3vw;
+        font-size: 2.5vw;
+    }
+
+    .resume_right p {
+        font-size: 2.5vw;
+    }
+
+    /*CONTACT SECTION*/
+
+    .contact p,
+    .contact a {
+        font-size: 2.5vw;
+    }
+
+    .contact h2 {
+        font-size: 5vw;
+    }
+
+    .contact h3 {
+        font-size: 3vw;
+    }
+
+    .contact_wrap {
+        width: 100%;
+    }
+
+    .contact_list,
+    .contact_socmed,
+    .socmed_list {
+        width: 50%;
+    }
+
+    .contact_item h3 {
+        width: 15vw;
+    }
+
+    .contact_item h3.phone {
+        margin-top: 5px;
+    }
+
+    .contact_wrap .socmed_list li img {
+        width: 6vw;
+    }
+
+    .contact {
+        padding: 5% 10% 2% 10%;
+        position: relative;
+    }
+
+    .flower_wrap {
+        position: absolute;
+    }
+
+    .contact img.flower {
+        left: 75%;
+        top: 23vw;
+        width: 60%;
+    }
+
+    /*FOOTER SECTION*/
+
+    footer img {
+        width: 2vw;
+    }
+
+    footer p {
+        font-size: 2vw;
+
+    }
+}
+
+/*380px SCREEN RESOLUTION*/
+
+@media (max-width: 380px) {
+
+    /* NAVIGATION*/
+    /* nav {
+        padding: 0 5% 0 5%;
+    } */
+
+    nav div.nav_logo a {
+        font-size: 2.5vw;
+    }
+
+    /*SKILLS SECTION*/
+
+    .skills_list ul {
+        grid-template-columns: 1fr;
+    }
+
+    /* RESUME SECTION */
+    .resume_left ul li {
+        margin-left: 3.5vw;
+    }
+
+    /*CONTACT SECTION*/
+    .contact_item h3.phone {
+        margin-top: 3px;
     }
 
 }
